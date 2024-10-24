@@ -1,4 +1,6 @@
 ## Unfinished / WIP skate resource for MTA:SA  
+
+Mostly server-based logic, except the client is trusted to provide an accurate `onClientGroundedStatus` event.
   
 `/skate` to spawn a skateboard  
 movement wasd  
