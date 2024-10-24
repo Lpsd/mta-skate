@@ -1,0 +1,35 @@
+<meta>
+    <info author="lopsi" version="0.1" name="Skate" description="Skate standalone gamemode" type="script" />
+    <oop>true</oop>
+
+    <file src="assets/skateboard.dff" />
+    <file src="assets/skateboard.txd" />
+    <file src="assets/skateboard.col" />
+    <file src="assets/skateboard.ifp" />
+
+    <script type="shared" src="shared/constants.lua"/>
+    <script type="shared" src="shared/classlib.lua"/>
+    <script type="shared" src="shared/helpers.lua"/>
+
+    <script type="shared" src="shared/classes/Autoloader.lua"/>
+    <script type="shared" src="shared/classes/Class.lua"/>
+    <script type="shared" src="shared/classes/Singleton.lua"/>
+
+    <script type="server" src="server/classes/Player.lua"/>
+    <script type="server" src="server/classes/PlayerManager.lua"/>
+    <script type="server" src="server/classes/Skateboard.lua"/>
+
+    <script type="server" src="server/commands.lua"/>
+    
+    <script type="client" src="client/classes/Engine.lua"/>
+    <script type="client" src="client/classes/SyncManager.lua"/>
+    <script type="client" src="client/classes/LocalSkateboard.lua"/>
+
+    <script type="client" src="client/utils/noclip.lua"/>
+    <script type="client" src="client/commands.lua"/>
+
+    <!-- This should always be the last include -->
+    <script type="shared" src="shared/init.lua"/>
+
+    <min_mta_version server="1.6.0-9.22763.0" client="1.6.0-9.22763.0"/>
+</meta>
