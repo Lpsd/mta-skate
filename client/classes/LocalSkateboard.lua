@@ -175,8 +175,11 @@ function LocalSkateboard:preUpdate()
             hit = false
         end
     end
-    self.isGrounded = hit
-    triggerServerEvent("onClientGroundedStatus", resourceRoot, self.isGrounded)
+
+    if (hit ~= self.isGrounded) then
+        self.isGrounded = hit
+        triggerServerEvent("onClientGroundedStatus", resourceRoot, self.isGrounded)
+    end
 
     if (self.skateboard) then
         local rot = self.skateboard.vehicle.rotation
